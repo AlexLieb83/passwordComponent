@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* color */
+  --accent: 216 62% 19%;
+  --white: 216 62% 99.5%;
+
+  --shadow: 0 44px 104px hsl(var(--accent) / 0.1);
+
+  /* fonts */
+  --fs-300: 14px;
+  --fs-400: 16px;
+  --fs-500: 18px;
+  --fs-600: 32px;
+
+  --fw-bold: 700;
+  --fw-semi: 600;
+  --fw-reg: 500;
+
+  /* spacing */
+  --space-2xl: 85px;
+  --space-xl: 40px;
+  --space-lg: 32px;
+  --space-md: 16px;
+  --space-sm: 8px;
+  --space-xs: 4px;
+
+  /* radii */
+  --round-full: 100vmax;
+  --round-md: 16px;
+  --round-sm: 8px;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(var(--accent) / 0.04);
+  color: hsl(var(--accent));
+  font-size: var(--fs-400);
+  line-height: 1.2;
+  font-weight: var(--fw-semi);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+small {
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-300);
+}
+
+a {
+  color: hsl(var(--accent));
+  text-underline-offset: 3px;
+}
+
+/* utilities */
+.flex-md {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+/* card classes */
+.grid-xs {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.card {
+  background-color: hsl(var(--white));
+  padding: var(--space-2xl);
+  border-radius: var(--round-md);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.card-top {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.card-top h2 {
+  font-size: var(--fs-600);
+}
+
+.headshot {
+  width: 78px;
+  border-radius: var(--round-full);
+}
